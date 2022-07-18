@@ -1,11 +1,9 @@
-FROM node:18.5 as build
-
+FROM node:10
+COPY ./ /app
 WORKDIR /app
-COPY package*.json ./
-RUN npm install 
-COPY . .
-RUN npm run build
+RUN npm install && npm run build
 
-FROM nginx:1.19
+FROM nginx
+RUN mkdir /app
+COPY --from=0 /app/dist /app
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /app/.svelte-kit /usr/share/nginx.html
