@@ -26,6 +26,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"daisyui": "^2.19.0",
 		"node": "^18.5.0"
 	}
 }
