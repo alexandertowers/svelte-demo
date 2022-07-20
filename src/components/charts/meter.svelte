@@ -1,11 +1,11 @@
 <script>
-	import { GaugeChart } from "@carbon/charts-svelte";
+	// import { GaugeChart } from "@carbon/charts-svelte";
 
-	import "@carbon/styles/css/styles.css";
-	import "@carbon/charts/styles.css";
+	// import "@carbon/styles/css/styles.css";
+	// import "@carbon/charts/styles.css";
 </script>
 
-<GaugeChart
+<!-- <GaugeChart
 	data={[
 	{
 		"group": "value",
@@ -26,4 +26,4 @@
 		"status": "danger"
 	}
 }}
-	/>
+	/> -->
