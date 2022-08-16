@@ -3,6 +3,7 @@
     import Meter from "../components/charts/meter.svelte"
     import "@carbon/styles/css/styles.css";
     import "@carbon/charts/styles.css";
+    import {getUser} from "../store.js"
     let quickStats = [
         {'title':'Number of Customers', 'value':'12345', 'desc':'↗︎ 400 (22%)'},
         {'title':'Assets under Administration', 'value':'$1,543,299.00', 'desc':''},
@@ -20,7 +21,7 @@
       </div>
 </div>
 
-<p class="font-bold text-xl p-5">Hi, Alex!</p>
+<p class="font-bold text-xl p-5">Hi, {getUser.name}, {getUser.email}</p>
 
 <div class="flex flex-col w-full flex-row lg:flex-row">
     <div class="card lg:w-1/3 min-h-max bg-base-100 shadow m-5">
