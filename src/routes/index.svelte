@@ -34,6 +34,6 @@
 
 <div>
     {#if !$isAuthenticated}
-        <a class="btn btn-primary btn-lg mr-auto ml-auto" href="/Home" role="button" on:click="{login}">Log In</a>
+        <a class="btn btn-primary btn-lg mr-auto ml-auto" href="/#" role="button" on:click="{login}">Log In</a>
     {/if}
 </div>
